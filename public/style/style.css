@@ -1,0 +1,176 @@
+html{
+  font-size : 65.2%;
+  font-size : inherit;
+  margin : 0;
+  overflow-x : hidden;
+}
+
+body{
+  min-height : 100vh;
+  background-image : url(../assets/books.jpg);
+  background-repeat : no-repeat;
+  background-position : center;
+  background-origin : content-box;
+  background-size : auto 100%;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  background-color : black;
+}
+
+@media only screen and (max-height: 550px){
+  body{
+    min-height : fit-content;
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+    background-size : 100% 100%;
+    justify-content : center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html, body {
+    font-size: 55%;
+    justify-content : center;
+  }
+}
+
+form{
+  margin : 6rem;
+  padding : 3rem;
+  width : fit-content;
+  min-height : 35rem;
+  background-color : #FFFC;
+  display : flex;
+  flex-direction : column;
+  justify-content : space-between;
+  align-items : center;
+  color : black;
+  font-size : 1.5rem;
+  font-family : Impact, fantasy;
+ -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius : 10px;
+}
+
+.pre-login{
+  width : fit-content;
+  color : white;
+  background-color : #000A;
+  box-shadow: 15px 10px 15px black;
+}
+
+nav{
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  justify-content : center;
+}
+
+h1{
+  text-align : center;
+  color : #B20F;
+}
+
+#user-avatar{
+  aspect-ratio : 1/1;
+  height : 7rem;
+  margin-bottom : 1rem;
+}
+
+input{
+  width : 30rem;
+  height : 3.5rem;
+  font-size : 2rem;
+  color : #FFFF;
+  text-align : center;
+  border-radius : 1.5rem;
+  background-color : #000C;
+  border-width : .1rem;
+  border-color : #FFF3;
+}
+
+input:hover, input:focus{
+  background-color : #000F;
+}
+
+#grades-container{
+  width : 100%;
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  justify-content : center;
+}
+
+.grades{
+  width : 4rem;
+  margin-right : 1rem;
+  margin-left : 1rem;
+}
+
+table{
+  width : 100%;
+  font-size : 1.2rem;
+  font-family : American Typewriter, serif;
+}
+
+th{
+  width : 10rem;
+  background-color : black;
+  color : #C20F;
+  text-align : center;
+}
+
+td{
+  text-align : center;
+}
+
+tr:nth-child(even){
+  background-color: #AAAF;
+}
+
+tr:hover{
+  background-color : #0A0F;
+}
+
+.warning{
+  font-size : 1.3rem;
+  margin : 1rem;
+  text-decoration : underline;
+  font-family : Arial Narrow, sans-serif;
+  color : red;
+}
+
+.success{
+  color : #0C0F;
+  font-size : 1.5rem;
+  margin-top : 1.6rem;
+}
+
+button, a, a:visited{
+  margin : 1rem;
+  width : 10rem;
+  height : 3rem;
+  border-radius : 1rem;
+  border-width : .1rem;
+  border-color : #FFF3;
+  border : none;
+  background-color : #000F;
+  color : #FFFF;
+  font-family : sans-serif;
+  font-size : 1.5rem;
+  text-align : center;
+  text-decoration : none;
+  align-self : center;
+  transition-duration : .01s;
+  text-decoration: none;
+  cursor: default;
+}
+
+a, a:visited{
+  line-height : 3rem;
+}
+
+button:hover, a:hover{
+  background-color : #0A0F;
+}

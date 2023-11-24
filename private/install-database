@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+
+<?php
+include "./private/database.php";
+
+echo "Host IP: ";
+$host = fgets(STDIN);
+echo "Database User: ";
+$db_user = fgets(STDIN);
+echo "Database password: ";
+$db_pwd = fgets(STDIN);
+echo "Database port: ";
+$port = fgets(STDIN);
+echo "\n";
+
+?>
