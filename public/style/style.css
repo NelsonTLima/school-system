@@ -6,11 +6,12 @@ html{
 }
 
 body{
-  min-height : 100vh;
+  min-height : fit-content;
+  height : 80vh;
+  padding : 5rem;
   background-image : url(../assets/books.jpg);
   background-repeat : no-repeat;
   background-position : center;
-  background-origin : content-box;
   background-size : auto 100%;
   display : flex;
   flex-direction : column;
@@ -21,8 +22,6 @@ body{
 @media only screen and (max-height: 550px){
   body{
     min-height : fit-content;
-    padding-top : 2rem;
-    padding-bottom : 2rem;
     background-size : 100% 100%;
     justify-content : center;
   }
@@ -36,14 +35,13 @@ body{
 }
 
 form{
-  margin : 6rem;
   padding : 3rem;
   width : fit-content;
-  min-height : 35rem;
+  min-height : 30rem;
   background-color : #FFFC;
   display : flex;
   flex-direction : column;
-  justify-content : space-between;
+  justify-content : flex-start;
   align-items : center;
   color : black;
   font-size : 1.5rem;

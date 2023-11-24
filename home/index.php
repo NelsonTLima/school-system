@@ -25,8 +25,9 @@ authenticate_access();
 
     <h1>Trabalho de Programação Web</h1>
 
-    <h3>Ernando Tales de Menezes lima
-    <br>Nelson Túlio de Menezes Lima</h3>
+    <h3 style="margin-bottom : 8rem;">
+      Ernando Tales de Menezes lima<br>
+      Nelson Túlio de Menezes Lima</h3>
     <button formaction="../private/logout.php"
     style="align-self : flex-end;">Logout</button>
 
