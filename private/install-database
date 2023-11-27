@@ -1,16 +1,18 @@
-#!/usr/bin/env php
+#!php
 
 <?php
-include "./private/database.php";
+include "./database.php";
 
 echo "Host IP: ";
-$host = fgets(STDIN);
+$host = trim(fgets(STDIN));
 echo "Database User: ";
-$db_user = fgets(STDIN);
+$db_user = trim(fgets(STDIN));
 echo "Database password: ";
-$db_pwd = fgets(STDIN);
+$db_pwd = trim(fgets(STDIN));
 echo "Database port: ";
-$port = fgets(STDIN);
+$port = trim(fgets(STDIN));
 echo "\n";
+
+create_database($host, $db_user, $db_pwd, $port);
 
 ?>
